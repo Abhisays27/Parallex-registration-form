@@ -17,13 +17,14 @@ section{
     overflow: hidden;
 
 }
-.container{
+ .container{
     position: absolute;
     left: -10%;
     width: 120%;
     height: 100vh;
     background: url('images/bg.jpg');
-}
+} 
+
 .container #scene .layer
 {
     position: absolute;
@@ -116,5 +117,57 @@ section{
 {
     text-decoration: underline;
 }
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    .login {
+      width: 90%;
+      padding: 30px;
+    }
+    
+    .login h2 {
+      font-size: 2em;
+    }
+    
+    .login .inputBox input {
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* For screens between 600px and 900px */
+  @media (min-width: 600px) and (max-width: 900px) {
+    .login {
+      width: 70%;
+      padding: 40px;
+    }
+    
+    .login h2 {
+      font-size: 2.25em;
+    }
+    
+    .login .inputBox input {
+      font-size: 1.1em;
+      margin-bottom: 25px;
+    }
+  }
+  
+  /* For screens larger than 900px */
+  @media (min-width: 900px) {
+    .login {
+      width: 500px;
+      padding: 60px;
+    }
+    
+    .login h2 {
+      font-size: 2.5em;
+    }
+    
+    .login .inputBox input {
+      font-size: 1.25em;
+      margin-bottom: 30px;
+    }
+  }
+  
  
 
