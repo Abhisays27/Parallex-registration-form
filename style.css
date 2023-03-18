@@ -158,6 +158,12 @@ section{
       font-size: 1em;
       margin-bottom: 20px;
     }
+    .logo {
+        max-width: 50px;
+        height: 46px;
+        margin: -16px;
+      }
+      
   }
   
   /* For screens between 600px and 900px */
@@ -175,6 +181,9 @@ section{
       font-size: 1.1em;
       margin-bottom: 25px;
     }
+    .logo {
+        max-width: 70px;
+      }
   }
   
   /* For screens larger than 900px */
@@ -212,6 +221,18 @@ section{
   .login .inputBox select option {
     background-color: #000;
     color: #fff;
+  }
+  .logo-wrapper {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    
+    align-items: center;
+  }
+  
+  .logo {
+    max-width: 110px;
   }
   
  
