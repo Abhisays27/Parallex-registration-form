@@ -60,46 +60,7 @@
     </script>
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js";
-      import { getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js"
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
     
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyCAl7M4B963aAylTBrC94iRJyjbUHj5Rfc",
-        authDomain: "spec-registration.firebaseapp.com",
-        databaseURL: "https://spec-registration-default-rtdb.firebaseio.com",
-        projectId: "spec-registration",
-        storageBucket: "spec-registration.appspot.com",
-        messagingSenderId: "17453991846",
-        appId: "1:17453991846:web:c9d2a665baf4a314afb167",
-        measurementId: "G-N3L03BNRG1"
-      };
-    
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
-
-      const db = getDatabase(app);
- 
-document.getElementById('login').addEventListener('submit', function(e) {
-    e.preventDefault();
-    set(ref(db, 'users/' + Math.random().toString(36).slice(2, 7)), {
-        name: document.getElementById('fname').value,
-        email: document.getElementById('email').value,
-        subject: document.getElementById('gender').value,
-       
-    });
- 
-    alert('Your form is submitted');
-    document.getElementById('login').reset();
-});
-    </script>
      
   
   </body>
